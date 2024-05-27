@@ -5,7 +5,10 @@ def mostrar_menu():
 def agregar_contacto(nombre, telefono, email, contactos):
     contacto = {"Nombre": nombre, "Telefono": telefono, "Email": email}
     contactos[nombre] = contacto
-    mensaje = print(f"Se ha agregado el contacto: {contacto}")
+    mostrar_nombre = contacto["Nombre"]
+    mostrar_telefono = contacto["Telefono"]
+    mostrar_email = contacto["Email"]
+    mensaje = print(f"Se ha agregado el contacto: {mostrar_nombre}, {mostrar_telefono}, {mostrar_email}")
     return mensaje
 
 def buscar_contacto(nombre, contactos):
@@ -21,8 +24,12 @@ def eliminar_contacto(nombre, contactos):
         return mensaje
 
 def mostrar_contactos(diccionario):
-    for contacto in diccionario:
-        print(f"{diccionario[contacto]}")
+    for contacto in diccionario.values():
+        nombre = contacto["Nombre"]
+        telefono = contacto["Telefono"]
+        email = contacto["Email"]
+        print(f"Nombre: {nombre}, Telefono: {telefono}, Email: {email}")
+
 
 diccionario_contactos = {}
 mostrar_menu()
