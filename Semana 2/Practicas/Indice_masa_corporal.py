@@ -1,4 +1,4 @@
-print("Este programa se encarga de calcular el IMC (Indice de Masa Corporal)")
+mensaje_inicio = print("Este programa se encarga de calcular el IMC (Indice de Masa Corporal)")
 
 def solicitar_datos():
     peso = float(input("Introduce tu peso en kg: "))

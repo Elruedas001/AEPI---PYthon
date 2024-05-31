@@ -1,4 +1,4 @@
-print("Este programa permite el registro y el manejo de contactos")
+mensaje_inicio = print("Este programa permite el registro y el manejo de contactos")
 def mostrar_menu():
     print("Elija una opcion:\n0 --> Salir\n1 --> Agregar contacto\n2 --> Buscar contacto\n3 --> Mostrar contactos\n4 --> Eliminar contacto\n5 --> Mostrar menu")
 

@@ -1,4 +1,4 @@
-print("Este programa permite la conversion de Celsius a Farenheit y viceversa")
+mensaje_inicio = print("Este programa permite la conversion de Celsius a Farenheit y viceversa")
 
 def mostrar_menu():
     print("Elija una opcion:\n0 --> Salir\n1 --> Convertir de C a F\n2 --> Convertir de F a C\n3 --> Mostrar menu")
